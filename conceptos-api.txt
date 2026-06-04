@@ -1,0 +1,10 @@
+Explicación de la ruta POST /reporte:
+1. ¿Qué hace esta ruta?:
+Esta ruta escucha solicitudes de tipo POST en la dirección '/reporte'.
+A diferencia de las rutas GET, está diseñada para recibir información oculta en el "cuerpo" de la petición (req.body). 
+Cuando recibe el dato llamado 'mensaje', el servidor responde con un objeto JSON confirmando que el estado
+es "Reporte recibido" junto con el texto enviado.
+2. ¿Para qué podría servir en una aplicación comunitaria?:
+Podría servir para que los ciudadanos envíen reportes en tiempo real sobre
+incidentes en su barrio (por ejemplo, "Falla en el alumbrado público" o "Bloqueo de vía").
+Al ser una ruta POST, permite enviar textos largos, formularios o imágenes sin exponer la información directamente en la barra de direcciones del navegador.
